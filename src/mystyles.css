@@ -30,7 +30,7 @@ div{
 border-radius: 25px;
 }
 article{
-    border: 1px solid black 25px;
+    border: 1px solid grey;
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
