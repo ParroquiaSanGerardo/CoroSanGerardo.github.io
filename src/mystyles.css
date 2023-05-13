@@ -1,3 +1,7 @@
+*{
+border-radius: 25%;
+shadow-box:black;
+}
 html, body {
     font-family: "Lucida Sans", sans-serif; 
     width: 96%;
