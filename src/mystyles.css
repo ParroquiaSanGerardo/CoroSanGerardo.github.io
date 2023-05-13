@@ -1,4 +1,6 @@
-
+div, img, article, header, .boton{
+    border-radius: 25px; 
+}
 html, body {
     font-family: "Lucida Sans", sans-serif; 
     width: 96%;
@@ -26,7 +28,6 @@ main{
     display: flex;
     flex-direction: column;
 }
-
 article{
     border: 1px solid grey;
     display: flex;
@@ -35,13 +36,22 @@ article{
 }
 .texto{
     margin-left: 1% ;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
 }
 .boton{
-    width: 35%;
+    width: 50%;
+    height: 10%;
+    padding: 5%;
     background-color: blue;
-    padding: 2%;
-    margin-bottom: 5%;
     text-align: center;
+    justify-self: center;
 }
 a{
     color: white;
