@@ -1,6 +1,13 @@
 div, img, article, header, .boton, footer{
     border-radius: 25px; 
 }
+article, header, .boton, footer{
+    box-shadow: 5px 5px 5px rgb(122, 86, 61);
+}
+img{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 html, body {
     font-family: "Lucida Sans", sans-serif; 
     width: 96%;
@@ -9,7 +16,7 @@ html, body {
 }
 header{
     width: 100%;
-    background-color: blue;
+    background-color: rgb(203, 138, 92);
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -19,6 +26,7 @@ header{
 }
 .rec{
     width: 25%;
+    display: flex;
 }
 .tam{
     width: 50%;
@@ -29,7 +37,7 @@ main{
     flex-direction: column;
 }
 article{
-    border: 1px solid grey;
+    border: 3px solid rgb(196, 115, 58);
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
@@ -49,7 +57,7 @@ p{
     width: 50%;
     height: 10%;
     padding: 5%;
-    background-color: blue;
+    background-color: rgb(203, 138, 92);
     text-align: center;
     justify-self: center;
 }
@@ -74,7 +82,7 @@ a{
 }
 footer{
     width: 100%;
-    background-color: blue;
+    background-color: rgb(203, 138, 92);
     color: white;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -92,12 +100,12 @@ article{
 .boton{
     width: 35%;
     padding: 5%;
-    background-color: blue;
+    background-color: rgb(203, 138, 92);
     text-align: center;
 }
 footer{
     width: 100%;
-    background-color: blue;
+    background-color: rgb(203, 138, 92);
     display: flex;
     justify-content: space-around;
     text-align: center;
