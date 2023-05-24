@@ -21,7 +21,7 @@ header{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    color: black;
+    color: white;
     margin-bottom: 5%;
 }
 .rec{
@@ -86,7 +86,7 @@ a{
 footer{
     width: 100%;
     background-color: rgb(214, 0, 0);
-    color: black;
+    color: white;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     text-align: center;
