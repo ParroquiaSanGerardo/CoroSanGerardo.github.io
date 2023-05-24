@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'fuente';
+    src: url('../fuentes/bay-tavern-s-plain-w05-bold.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+ }
 div, img, article, header, .boton, footer{
     border-radius: 25px; 
 }
 article, header, .boton, footer{
-    box-shadow: 5px 5px 5px rgb(124, 55, 55);
+    box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
 }
 img{
     border-bottom-left-radius: 0px;
@@ -16,12 +22,12 @@ html, body {
 }
 header{
     width: 100%;
-    background-color: rgb(214, 0, 0);
+    background-color: rgb(255, 0, 0);
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 0);
     margin-bottom: 5%;
 }
 .rec{
@@ -37,7 +43,7 @@ main{
     flex-direction: column;
 }
 article{
-    border: 3px solid rgb(211, 35, 35);
+    border: 3px solid rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
@@ -56,7 +62,7 @@ p{
 .boton{
     width: 75%;
     padding: 5%;
-    background-color: rgb(214, 0, 0);
+    background-color: rgb(255, 0, 0);
     text-align: center;
     justify-self: center;
 }
@@ -65,7 +71,7 @@ p{
     height: 100%;
 }
 a{
-    color: white;
+    color: rgb(255, 255, 0);
     text-decoration: none;
 }
 .lista{
@@ -85,8 +91,8 @@ a{
 }
 footer{
     width: 100%;
-    background-color: rgb(214, 0, 0);
-    color: white;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 0);
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     text-align: center;
