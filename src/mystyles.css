@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'fuente';
     src: url('recursos/fuentes/Heaters.ttf') format("truetype");
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
  }
 div, img, article, header, .boton, footer{
@@ -15,12 +15,12 @@ img{
     border-bottom-right-radius: 0px;
 }
 html, body {
-    font-family: 'fuente';
     width: 96%;
     margin: 2%; 
     margin-right: 2%;
 }
 header{
+    font-family: 'fuente';
     width: 100%;
     background-color: rgb(255, 0, 0);
     display: flex;
@@ -41,6 +41,9 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+h2{
+    font-family: 'fuente';
 }
 article{
     border: 3px solid rgb(255, 0, 0);
@@ -69,6 +72,7 @@ p{
 .a{
     width: 100%;
     height: 100%;
+    font-family: 'fuente';
 }
 a{
     color: rgb(255, 255, 0);
@@ -96,6 +100,7 @@ footer{
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     text-align: center;
+    font-family: 'fuente';
 }
 @media only screen and (min-width:601px){
 main{
