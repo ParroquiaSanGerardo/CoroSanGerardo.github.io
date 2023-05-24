@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'fuente';
-    src: url('../fuentes/bay-tavern-s-plain-w05-bold.ttf') format("truetype");
+    src: url('recursos/fuentes/Heaters.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
  }
@@ -15,7 +15,7 @@ img{
     border-bottom-right-radius: 0px;
 }
 html, body {
-    font-family: "Lucida Sans", sans-serif; 
+    font-family: 'fuente';
     width: 96%;
     margin: 2%; 
     margin-right: 2%;
