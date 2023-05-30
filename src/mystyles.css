@@ -1,8 +1,9 @@
 @font-face {
     font-family: 'fuente';
-    src: url('recursos/fuentes/Heaters.ttf') format("truetype");
-    font-weight: bold;
+    src: url('recursos/fuentes/Summeron.ttf') format("truetype");
+    font-weight: normal;
     font-style: normal;
+    font-size:smaller;
  }
 div, img, article, header, .boton, footer{
     border-radius: 25px; 
