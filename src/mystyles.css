@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'fuente';
-    src: url('recursos/fuentes/Summeron.ttf') format("truetype");
+    src: url('recursos/fuentes/Summeron-Ñ.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
     font-size:smaller;
@@ -25,11 +25,12 @@ header{
     width: 100%;
     background-color: rgb(255, 0, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     color: rgb(255, 255, 0);
     margin-bottom: 5%;
+    padding: 2%;
 }
 .rec{
     width: 25%;
@@ -45,6 +46,7 @@ main{
 }
 h2{
     font-family: 'fuente';
+    text-align: center;
 }
 article{
     border: 3px solid rgb(255, 0, 0);
@@ -102,6 +104,9 @@ footer{
     padding-bottom: 0.5%;
     text-align: center;
     font-family: 'fuente';
+}
+li{
+    list-style-type: "\1F9F3";
 }
 @media only screen and (min-width:601px){
 main{
