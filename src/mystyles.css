@@ -126,9 +126,7 @@ li{
     width: 45%;
 }
 main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
 }
 article{
     width: 20%;
@@ -147,5 +145,26 @@ footer{
     text-align: center;
     color: rgb(255, 255, 255);
     margin-bottom: 5%;
+}
+.grid{
+    display: grid;
+    grid-area: auto;
+    .grid {
+        display:grid;
+        grid-template-areas: "head head"
+                             "menu main"
+                             "foot foot";
+      }
+      
+      .a { grid-area:head; background:blue }
+      .b { grid-area:menu; background:red }
+      .c { grid-area:main; background:green }
+      .d { grid-area:foot; background:orange }
+}
+.derecha{
+    
+}
+.izquierda{
+
 }
 }
