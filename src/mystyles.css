@@ -150,6 +150,7 @@ ul li {
 
 li {
     list-style-type: "\1F9F3";
+    list-style-position: outside;
 }
 
 @media only screen and (min-width:601px) {
@@ -194,6 +195,12 @@ li {
 
     article {
         width: 45%;
+    }
+    .lista{
+        text-align: center;
+    }
+    li{
+        list-style-position: inside;
     }
 
     .boton {
