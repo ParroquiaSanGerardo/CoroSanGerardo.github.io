@@ -15,9 +15,6 @@ img{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-.img1{
-padding:1%;
-}
 html, body {
     width: 96%;
     margin: 2%; 
@@ -55,6 +52,9 @@ article{
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
+}
+.articulo{
+        padding: 1%;
 }
 .texto{
     margin-bottom: 5%;
