@@ -15,6 +15,9 @@ img{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+.img1{
+margin:1%;
+}
 html, body {
     width: 96%;
     margin: 2%; 
