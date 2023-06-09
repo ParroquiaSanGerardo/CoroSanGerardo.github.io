@@ -187,7 +187,7 @@ li {
     .derecha {
         display: flex;
         width: 45%;
-        justify-content: space-arround;
+        justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
     }
