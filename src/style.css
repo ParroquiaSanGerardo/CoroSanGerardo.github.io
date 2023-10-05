@@ -91,7 +91,30 @@ article {
 p {
     text-align: center;
 }
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1%;
+    text-align: center;   
+}
+.boton2 {
+    display: flex;
+    width: 40%;
+    height: 60px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 2.5%;
+    background-color: var(--naro);
+    text-align: center;
+    justify-self: center;
 
+}
+.b{
+    display: flex;
+    align-items: center;
+}
 .boton {
     width: 75%;
     padding: 5%;
@@ -187,7 +210,7 @@ li {
         width: 100%;
     }
 
-    .derecha {
+    .derecha, .can {
         display: flex;
         width: 45%;
         justify-content: space-around;
