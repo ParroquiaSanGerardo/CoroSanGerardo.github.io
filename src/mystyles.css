@@ -136,15 +136,15 @@ form {
 }
 
 label {
-    font-family: 'Times New Roman', serif;
-    font-size: 24px;
+    font-family: 'mi-fuente';
+    font-size: 40px;
     color: var(--vero);
     margin-bottom: 20px;
     display: block;
 }
 
 input, button, #resultado p, #codigoErroneo, #codigoErrores {
-    font-family: 'Arial', sans-serif;
+    font-family: 'mi-fuente';
     font-size: 16px;
     color: var(--verc);
 }
@@ -175,7 +175,11 @@ button:hover {
 }
 
 #resultado, #codigoErroneo, #codigoErrores {
+    font-family: 'mi-fuente';
     margin-top: 20px;
+}
+span{
+    font-size: 40px;
 }
 
 #resultado {
