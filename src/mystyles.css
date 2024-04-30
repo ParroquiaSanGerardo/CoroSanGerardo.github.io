@@ -1,6 +1,7 @@
-html, body {
-    font-family: "Lucida Sans", sans-serif;
-}
+@font-face {
+    font-family: 'mi-fuente';
+    src: url('recursos/fuentes/Por-Siempre-Gótica.ttf') format('truetype');
+  }
 body {
     background-image: url(recursos/imagenes/PapelEnvejecido.jpg);
     background-position: bottom;
@@ -18,7 +19,14 @@ body {
     --verot: rgb(25, 55, 40,0.5);
 
 }
-
+h1{
+    font-family: 'mi-fuente';
+    font-size: 3em;
+}
+h2{
+    font-family: 'mi-fuente';
+    font-size: 2.5em;
+}
 header{
     width: 100%;
     background-color: var(--verc);
@@ -62,7 +70,7 @@ article{
     align-self: center;
 }
 .texto{
-    margin-left: 1% ;
+    margin: 1% ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +86,7 @@ article{
 a{
     color: var(--verc);
     text-decoration: none;
+    font-family: 'mi-fuente';
 }
 .lista{
     width: 100%;
@@ -91,7 +100,7 @@ ul {
     margin: 0;
     }
     
-    li {
+li {
     background: url(recursos/imagenes/tu-imagen.png) no-repeat left center;
     height: 30px;
     padding-left: 25px;
