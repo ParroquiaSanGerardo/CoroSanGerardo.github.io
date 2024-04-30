@@ -85,6 +85,17 @@ a{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    li {
+    background: url(recursos/imagenes/tu-imagen.png) no-repeat left center;
+    height: 30px;
+    padding-left: 25px;
+    }
 .izq{
     width: 45%;
 }
