@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 	<title>Ciénaga San Gerardo</title>
 	<meta charset="utf-8">
@@ -8,21 +7,20 @@
 	<link rel="stylesheet" href="mystyles.css">
 	<link rel="icon" href="recursos/imagenes/favicon.ico">
 </head>
-
 <body>
 	<header>
 		<div class="rec">
 			<h1>Ciénaga<br>San Gerardo</h1>
 		</div>
 		<div class="tam">
-			<img src="https://parroquiasangerardo.github.io/src/recursos/imagenes/san%20Shrek.png" width="100%"></img>
+			<img src="recursos/imagenes/san Shrek.png" width="100%"></img>
 		</div>
 	</header>
 	<main>
 
 		<article>
 			<div class="img">
-				<img src="https://parroquiasangerardo.github.io/src/recursos/imagenes/El-autocar.png" width="95%" alt="Autocar">
+				<img src="recursos/imagenes/El-autocar.png" width="95%" alt="Autocar">
 			</div>
 			<div class="texto">
 				<h2>Viaje</h2>
@@ -35,7 +33,7 @@
 
 		<article>
 			<div class="img">
-				<img src="https://parroquiasangerardo.github.io/src/recursos/imagenes/mochila.png" width="95%" alt="Macuto">
+				<img src="recursos/imagenes/mochila.png" width="95%" alt="Macuto">
 			</div>
 			<div class="texto">
 				<h2>¿Qué tengo que llevar?</h2>
@@ -82,45 +80,37 @@
 					<button id="botonMenuPrincipal" style="display: none;" onclick="irAlMenu()">¿Tu herman@ también se disfraza?</button>
 				</div>
 				<div class="C13">
-          <div class="container">
-					<h4>¿Eres de 13(nacidos en 2010)?</h4>
-        <a href="#opcion1" class="option">1️⃣3️⃣</a>
-        <div id="opcion1" class="message">
-            <div>Pulsa este botón solo si eres del grupo de 13(nacido en 2010)</div>
-            <a href="#plan1" class="button">Soy del grupo de 13(he nacido en 2010)</a>
-        </div>
-        <div id="plan1" class="velada-sorpresa">
-            <div class="lista">
-						<div class="izq">
-							<ul>
-								<li> Esterilla</li>
-								<li> Ropa de baño</li>
-								<li> Una muda por día</li>
-							</ul>
-						</div>
-						<div class="der">
-							<ul>
-								<li> Linterna</li>
-								<li> Chubasquero</li>
-								<li> Sudadera</li>
-							</ul>
+          				<div class="container">
+						<h4>¿Eres de 13(nacidos en 2010)?</h4>
+        					<a href="#opcion1" class="option">1️⃣3️⃣</a>
+        											<div id="opcion1" class="message">
+            											<div>Pulsa este botón solo si eres del grupo de 13(nacido en 2010)</div>
+            						<a href="#plan1" class="button">Soy del grupo de 13(he nacido en 2010)</a>
+        					</div>
+        			   		<div class="lista">
+							<div class="izq">
+								<ul>
+									<li> Esterilla</li>
+									<li> Ropa de baño</li>
+									<li> Una muda por día</li>
+								</ul>
+							</div>
+							<div class="der">
+								<ul>
+									<li> Linterna</li>
+									<li> Chubasquero</li>
+									<li> Sudadera</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-            <!--<a href="#" class="button">Descubre tu Sorpresa</a>-->
-        </div>
- 
-            <!--<a href="#" class="button">Descubre tu Sorpresa</a>-->
-        </div>
-    </div>
-
-					
 				</div>
-			</div>
+    			</div>
 		</article>
 
 		<article>
 			<div class="img">
-				<img src="https://parroquiasangerardo.github.io/src/recursos/imagenes/AlbergueVilluercas.png" width="95%" alt="Albergue">
+				<img src="recursos/imagenes/AlbergueVilluercas.png" width="95%" alt="Albergue">
 			</div>
 			<div class="texto">
 				<h2>¿A dónde vamos?</h2>
@@ -133,7 +123,7 @@
 
 		<article>
 			<div class="img">
-				<img src="https://parroquiasangerardo.github.io/src/recursos/imagenes/CruzSG.png" width="95%" alt="Cruz SG">
+				<img src="recursos/imagenes/CruzSG.png" width="95%" alt="Cruz SG">
 			</div>
 			<div class="texto">
 				<h2>PASTORAL INFANTIL</h2>
@@ -143,7 +133,6 @@
 				</div>
 			</div>
 		</article>
-
 	</main>
 	<footer>
 		<h1>
@@ -167,39 +156,27 @@
 		"lolinator": "Lolinator extermina bichos y convalida duchas. Disfrazate de cuasimodo",
 		"coco": "Disfrázate de pantera rosa. El bollo más marica"
 	};
-
 	var contadorErrores = 0;
 	var contadorTotalErrores = 0;
 	var ultimoCodigoCorrecto = true;
-
   
-
 	function validarCodigo() {
 		limpiarResultado();
-
 		var codigoUsuario = document.getElementById("codigo").value;
-
 		if (codigoUsuario === "") {
 			return;
 		}
-
-
-
 		if (codigoUsuario in codigos) {
 			if (!ultimoCodigoCorrecto) {
 				contadorErrores = 0;
 				document.getElementById("codigoErroneo").innerText = "";
 			}
 			ultimoCodigoCorrecto = true;
-
-
 			var resultadoDiv = document.getElementById("resultado");
 			resultadoDiv.style.display = "flex";
 			var texto = codigos[codigoUsuario];
 			resultadoDiv.innerHTML += "<span font-weight: bold;'>" + texto + "</span>";
 			document.getElementById("botonMenuPrincipal").style.display = "inline-block";
-
-
 			document.getElementById("formulario").style.display = "none";
 		} else {
 			ultimoCodigoCorrecto = false;
@@ -215,24 +192,19 @@
 			codigoErroneoDiv.innerText = mensaje;
 		}
 	}
-
 	function limpiarResultado() {
 		var resultadoDiv = document.getElementById("resultado");
 		resultadoDiv.innerHTML = "";
 	}
-
-
 	function mostrarContadorErrores(contador) {
 		var contadorDiv = document.getElementById("codigoErroneo");
 		contadorDiv.innerText = "¡Código Erróneo! " + contador + " Errores";
 	}
-
 	function irAlMenu() {
 		document.getElementById("formulario").style.display = "block";
 		document.getElementById("resultado").style.display = "none";
 		document.getElementById("botonMenuPrincipal").style.display = "none";
 	}
-
 	document.getElementById("codigo").addEventListener("keypress", function (event) {
 		if (event.keyCode === 13) {
 			event.preventDefault();
@@ -240,5 +212,4 @@
 		}
 	});
 </script>
-
 </html>
