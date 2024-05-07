@@ -220,14 +220,14 @@ span{
             max-width: 340px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: var(--verc);
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px var(--verot);
             transition: all 0.3s ease;
         }
 
         .container{
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 12px 24px var(--verot);
         }
 
         .option {
@@ -236,7 +236,7 @@ span{
             cursor: pointer;
             display: inline-block;
             margin: 10px;
-            color: #ff69b4;
+            color: var(--verot);
             text-decoration: none;
             /* Color rosa para mayor atractivo */
             transition: transform 0.2s ease;
@@ -259,20 +259,20 @@ span{
         }
 
         a.button {
-            background-color: #008cba;
+            background-color: var(--vero);
             /* Color azul para el botón */
-            color: white;
+            color: var(--verc);
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
             margin: 20px 5px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px var(--verot);
             transition: background-color 0.3s ease, box-shadow 0.2s ease;
         }
 
         a.button{
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px var(--verot);
         }
 
         @keyframes fadeIn {
@@ -325,26 +325,19 @@ span{
             /* Sombra más profunda */
         }
 
-        .velada-sorpresa h3 {
-            color: #ff749c;
+        .velada-sorpresa h4 {
+            color: var(--vro);
             /* Color del título */
             margin-bottom: 15px;
             /* Espaciado del título */
         }
 
-        .velada-sorpresa p {
-            font-size: 16px;
-            /* Tamaño del texto */
-            line-height: 1.5;
-            /* Espaciado de línea */
-        }
-
         .velada-sorpresa .button {
             display: inline-block;
             /* Hacer que el botón sea en línea */
-            background-color: #ff749c;
+            background-color: var(--vero);
             /* Fondo del botón */
-            color: white;
+            color: var(--verc);
             /* Texto del botón */
             padding: 10px 20px;
             /* Relleno del botón */
