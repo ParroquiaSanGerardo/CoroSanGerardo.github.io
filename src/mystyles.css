@@ -226,8 +226,7 @@ span{
             transition: all 0.3s ease;
         }
 
-        .container:hover {
-            transform: translateY(-5px);
+        .container{
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
         }
 
@@ -241,11 +240,6 @@ span{
             text-decoration: none;
             /* Color rosa para mayor atractivo */
             transition: transform 0.2s ease;
-        }
-
-        .option:hover {
-            transform: scale(1.1);
-            /* Efecto de crecimiento al pasar el mouse */
         }
 
         .message {
@@ -277,9 +271,7 @@ span{
             transition: background-color 0.3s ease, box-shadow 0.2s ease;
         }
 
-        a.button:hover {
-            background-color: #007ba7;
-            /* Un azul ligeramente más oscuro */
+        a.button{
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -326,52 +318,45 @@ span{
             animation: fadeIn 0.5s ease-in-out;
         }
 
-        .velada-sorpresa:hover {
+        .velada-sorpresa {
             transform: translateY(-5px);
             /* Efecto flotante al pasar el mouse */
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
             /* Sombra más profunda */
         }
-/*
+
         .velada-sorpresa h3 {
             color: #ff749c;
-            /* Color del título 
+            /* Color del título */
             margin-bottom: 15px;
-            /* Espaciado del título 
+            /* Espaciado del título */
         }
 
         .velada-sorpresa p {
             font-size: 16px;
-            /* Tamaño del texto 
+            /* Tamaño del texto */
             line-height: 1.5;
-            /* Espaciado de línea 
+            /* Espaciado de línea */
         }
 
         .velada-sorpresa .button {
             display: inline-block;
-            /* Hacer que el botón sea en línea 
+            /* Hacer que el botón sea en línea */
             background-color: #ff749c;
-            /* Fondo del botón 
+            /* Fondo del botón */
             color: white;
-            /* Texto del botón 
+            /* Texto del botón */
             padding: 10px 20px;
-            /* Relleno del botón 
+            /* Relleno del botón */
             text-decoration: none;
-            /* Sin subrayado 
+            /* Sin subrayado */
             border-radius: 5px;
-            /* Bordes redondeados del botón 
+            /* Bordes redondeados del botón */
             margin-top: 20px;
-            /* Espaciado arriba del botón 
+            /* Espaciado arriba del botón */
             transition: background-color 0.3s ease;
-            /* Animación del fondo 
+            /* Animación del fondo */
         }
-
-        .velada-sorpresa .button:hover {
-            background-color: #ff4961;
-            /* Color de fondo al pasar el mouse 
-        }
-
-*/
 
 @media only screen and (min-width:601px){
 main{
