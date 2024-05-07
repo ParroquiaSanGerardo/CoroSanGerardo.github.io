@@ -245,12 +245,12 @@ span{
         .message {
             display: none;
             font-size: 18px;
-            color: #555;
+            color: var(--vero);
             margin-top: 20px;
             padding: 15px;
-            background-color: #fafafa;
+            background-color: var(--verc);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px var(--verot);
         }
 
         .message:target {
@@ -286,7 +286,7 @@ span{
         }
 
         h2 {
-            color: #333;
+            color: var(--vero);
             margin-bottom: 30px;
         }
 
@@ -295,19 +295,19 @@ span{
             max-width: 400px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffccd5;
+            background-color: var(--verct);
             /* Un color rosa suave */
-            border: 2px solid #ff749c;
+            border: 2px solid var(--vero);
             /* Un borde rosa más fuerte */
             border-radius: 15px;
             /* Bordes redondeados para suavidad */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px var(--verot);
             /* Sombra para profundidad */
             text-align: center;
             /* Alineación del texto */
             font-family: 'Poppins', sans-serif;
             /* Fuente */
-            color: #333;
+            color: var(--vero);
             /* Color de texto */
             transition: transform 0.3s ease;
             /* Animación suave */
@@ -321,7 +321,7 @@ span{
         .velada-sorpresa {
             transform: translateY(-5px);
             /* Efecto flotante al pasar el mouse */
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 12px 24px var(--verot);
             /* Sombra más profunda */
         }
 
