@@ -131,6 +131,9 @@ footer{
     text-align: center;
 }
 
+
+
+--Disfraz
 .disfraz {
     width: 100%;
     margin: 2%;
@@ -207,9 +210,168 @@ span{
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+--cosas13
+
 .C13{
     width: 100%;
 }
+ .container {
+            max-width: 340px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .option {
+            font-size: 64px;
+            /* Tamaño más grande para las cajas */
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px;
+            color: #ff69b4;
+            text-decoration: none;
+            /* Color rosa para mayor atractivo */
+            transition: transform 0.2s ease;
+        }
+
+        .option:hover {
+            transform: scale(1.1);
+            /* Efecto de crecimiento al pasar el mouse */
+        }
+
+        .message {
+            display: none;
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .message:target {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        a.button {
+            background-color: #008cba;
+            /* Color azul para el botón */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.2s ease;
+        }
+
+        a.button:hover {
+            background-color: #007ba7;
+            /* Un azul ligeramente más oscuro */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .velada-sorpresa {
+            display: none;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffccd5;
+            /* Un color rosa suave */
+            border: 2px solid #ff749c;
+            /* Un borde rosa más fuerte */
+            border-radius: 15px;
+            /* Bordes redondeados para suavidad */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Sombra para profundidad */
+            text-align: center;
+            /* Alineación del texto */
+            font-family: 'Poppins', sans-serif;
+            /* Fuente */
+            color: #333;
+            /* Color de texto */
+            transition: transform 0.3s ease;
+            /* Animación suave */
+        }
+
+        .velada-sorpresa:target {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .velada-sorpresa:hover {
+            transform: translateY(-5px);
+            /* Efecto flotante al pasar el mouse */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+            /* Sombra más profunda */
+        }
+/*
+        .velada-sorpresa h3 {
+            color: #ff749c;
+            /* Color del título 
+            margin-bottom: 15px;
+            /* Espaciado del título 
+        }
+
+        .velada-sorpresa p {
+            font-size: 16px;
+            /* Tamaño del texto 
+            line-height: 1.5;
+            /* Espaciado de línea 
+        }
+
+        .velada-sorpresa .button {
+            display: inline-block;
+            /* Hacer que el botón sea en línea 
+            background-color: #ff749c;
+            /* Fondo del botón 
+            color: white;
+            /* Texto del botón 
+            padding: 10px 20px;
+            /* Relleno del botón 
+            text-decoration: none;
+            /* Sin subrayado 
+            border-radius: 5px;
+            /* Bordes redondeados del botón 
+            margin-top: 20px;
+            /* Espaciado arriba del botón 
+            transition: background-color 0.3s ease;
+            /* Animación del fondo 
+        }
+
+        .velada-sorpresa .button:hover {
+            background-color: #ff4961;
+            /* Color de fondo al pasar el mouse 
+        }
+
+*/
 
 @media only screen and (min-width:601px){
 main{
