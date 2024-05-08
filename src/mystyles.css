@@ -217,6 +217,7 @@ span{
 /*------------------------------- Cosas13 ----------------------------------------*/
 .c13 {
     max-width: 100%;
+    padding: 5%;
     background-color: var(--verc);
     border-radius: 15px;
     box-shadow: 0 8px 16px var(--verot);
