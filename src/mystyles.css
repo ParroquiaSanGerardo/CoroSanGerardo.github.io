@@ -13,6 +13,7 @@ body {
 :root{
     --bla: rgb(255,255,255);
     --ama: rgb(255,255,0);
+    --amac: rgba(255,255,0,0.65);
     --verc: rgb(130,163,74);
     --verct: rgba(130, 163, 74, 0.5);
     --vero: rgb(25, 55, 40);
@@ -22,7 +23,7 @@ body {
 .texto{
     font-family: 'mi-fuente';
     font-size: 1.2em ;
-    margin: 1% ;
+    margin: 5% ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +134,9 @@ footer{
 
 
 
---Disfraz
+/*------------------------------- Disfraz --------------------------------------*/
+
+
 .disfraz {
     width: 100%;
     margin: 2%;
@@ -211,175 +214,181 @@ span{
     to { opacity: 1; }
 }
 
---cosas13
-
-.C13{
-    width: 100%;
+/*------------------------------- Cosas13 ----------------------------------------*/
+.c13 {
+    max-width: 100%;
+    background-color: var(--verc);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px var(--verot);
+    transition: all 0.3s ease;
 }
- .container {
-            max-width: 340px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: var(--verc);
-            border-radius: 15px;
-            box-shadow: 0 8px 16px var(--verot);
-            transition: all 0.3s ease;
-        }
+.c13:hover {
+    /* transform: translateY(-5px);*/
+    box-shadow: 0 12px 24px var(--verct);
+}
 
-        .container{
-            box-shadow: 0 12px 24px var(--verot);
-        }
+.option {
+    font-size: 64px;
+    /* Tamaño más grande para las cajas */
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    color: var(--amac);
+    text-decoration: none;
+    /* Color rosa para mayor atractivo */
+    transition: transform 0.2s ease;
+}
 
-        .option {
-            font-size: 64px;
-            /* Tamaño más grande para las cajas */
-            cursor: pointer;
-            display: inline-block;
-            margin: 10px;
-            color: var(--verot);
-            text-decoration: none;
-            /* Color rosa para mayor atractivo */
-            transition: transform 0.2s ease;
-        }
+.message {
+    display: none;
+    font-size: 18px;
+    color: var(--vero);
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--verc);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--verot);
+}
 
-        .message {
-            display: none;
-            font-size: 18px;
-            color: var(--vero);
-            margin-top: 20px;
-            padding: 15px;
-            background-color: var(--verc);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px var(--verot);
-        }
+.message:target {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
 
-        .message:target {
-            display: block;
-            animation: fadeIn 0.5s ease-in-out;
-        }
+a.button {
+    background-color: var(--vero);
+    /* Color azul para el botón */
+    color: var(--verc);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px 5px 0;
+    box-shadow: 0 2px 4px var(--verct);
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
 
-        a.button {
-            background-color: var(--vero);
-            /* Color azul para el botón */
-            color: var(--verc);
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 20px 5px 0;
-            box-shadow: 0 2px 4px var(--verot);
-            transition: background-color 0.3s ease, box-shadow 0.2s ease;
-        }
+a.button:hover {
+    background-color: var(--vero);
+    /* Un azul ligeramente más oscuro */
+    box-shadow: 0 4px 8px var(--verct);
+}
 
-        a.button{
-            box-shadow: 0 4px 8px var(--verot);
-        }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+    to {
+        opacity: 1;
+    }
+}
 
-            to {
-                opacity: 1;
-            }
-        }
+h3 {
+    color: var(--vero);
+    font-size: 1.5em;
+}
 
-        h2 {
-            color: var(--vero);
-            margin-bottom: 30px;
-        }
+.velada-sorpresa {
+    display: none;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--verct);
+    /* Un color rosa suave */
+    border: 2px solid var(--verot);
+    /* Un borde rosa más fuerte */
+    border-radius: 15px;
+    /* Bordes redondeados para suavidad */
+    box-shadow: 0 4px 8px var(--verot);
+    /* Sombra para profundidad */
+    text-align: center;
+    /* Alineación del texto */
+    color: var(--vero);
+    /* Color de texto */
+    transition: transform 0.3s ease;
+    /* Animación suave */
+}
 
-        .velada-sorpresa {
-            display: none;
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: var(--verct);
-            /* Un color rosa suave */
-            border: 2px solid var(--vero);
-            /* Un borde rosa más fuerte */
-            border-radius: 15px;
-            /* Bordes redondeados para suavidad */
-            box-shadow: 0 4px 8px var(--verot);
-            /* Sombra para profundidad */
-            text-align: center;
-            /* Alineación del texto */
-            font-family: 'Poppins', sans-serif;
-            /* Fuente */
-            color: var(--vero);
-            /* Color de texto */
-            transition: transform 0.3s ease;
-            /* Animación suave */
-        }
+.velada-sorpresa:target {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
 
-        .velada-sorpresa:target {
-            display: block;
-            animation: fadeIn 0.5s ease-in-out;
-        }
+.velada-sorpresa:hover {
+    transform: translateY(-5px);
+    /* Efecto flotante al pasar el mouse */
+    box-shadow: 0 12px 24px var(--verot);
+    /* Sombra más profunda */
+}
 
-        .velada-sorpresa {
-            transform: translateY(-5px);
-            /* Efecto flotante al pasar el mouse */
-            box-shadow: 0 12px 24px var(--verot);
-            /* Sombra más profunda */
-        }
+.velada-sorpresa h4 {
+    color: var(--vero);
+    /* Color del título */
+    margin-bottom: 15px;
+    /* Espaciado del título */
+    font-size: 1.2em;
+}
 
-        .velada-sorpresa h4 {
-            color: var(--vro);
-            /* Color del título */
-            margin-bottom: 15px;
-            /* Espaciado del título */
-        }
+.velada-sorpresa p {
+    font-size: 16px;
+    /* Tamaño del texto */
+    line-height: 1.5;
+    /* Espaciado de línea */
+    font-size: 0.8em;
+    text-align: center;
+}
 
-        .velada-sorpresa .button {
-            display: inline-block;
-            /* Hacer que el botón sea en línea */
-            background-color: var(--vero);
-            /* Fondo del botón */
-            color: var(--verc);
-            /* Texto del botón */
-            padding: 10px 20px;
-            /* Relleno del botón */
-            text-decoration: none;
-            /* Sin subrayado */
-            border-radius: 5px;
-            /* Bordes redondeados del botón */
-            margin-top: 20px;
-            /* Espaciado arriba del botón */
-            transition: background-color 0.3s ease;
-            /* Animación del fondo */
-        }
+.velada-sorpresa .button {
+    display: inline-block;
+    /* Hacer que el botón sea en línea */
+    background-color: var(--vero);
+    /* Fondo del botón */
+    color: var(--verc);
+    /* Texto del botón */
+    padding: 10px 20px;
+    /* Relleno del botón */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 5px;
+    /* Bordes redondeados del botón */
+    margin-top: 20px;
+    /* Espaciado arriba del botón */
+    transition: background-color 0.3s ease;
+    /* Animación del fondo */
+}
+
+/*--------------------------------- Queries ----------------------------------------*/
 
 @media only screen and (min-width:601px){
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-body {
-    background-image: url(recursos/imagenes/PapelEnvejecido.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    body {
+        background-image: url(recursos/imagenes/PapelEnvejecido.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-article{
-    width: 40%;
-}
-.boton{
-    width: 35%;
-    padding: 5%;
-    background-color: var(--vero);
-    text-align: center;
-}
-footer{
-    width: 100%;
-    background-color: var(--verc);
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    color: var(--vero);
-    margin-bottom: 5%;
-}
+    article{
+        width: 40%;
+    }
+    .boton{
+        width: 35%;
+        padding: 5%;
+        background-color: var(--vero);
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--verc);
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: var(--vero);
+        margin-bottom: 5%;
+    }
 }
