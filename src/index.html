@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="mystyles.css">
 	<link rel="icon" href="recursos/imagenes/favicon.ico">
+	<script src="script.js"></script>
 </head>
 <body>
 	<header>
@@ -13,7 +14,7 @@
 			<h1>Ciénaga<br>San Gerardo</h1>
 		</div>
 		<div class="tam">
-			<img src="recursos/imagenes/SanShrek.png" width="150%"></img>
+			<img src="recursos/imagenes/SanShrek.png" width="100%"></img>
 		</div>
 	</header>
 	<audio controls autoplay hidden>
@@ -83,9 +84,9 @@
 					<button id="botonMenuPrincipal" style="display: none;" onclick="irAlMenu()">¿Tu herman@ también se disfraza?</button>
 				</div>
 				<div class="c13">
-					<h3>¿Eres de 13 (nacidos en 2010)?</h3>
+					<h3>¿Eres de 1️3 (nacidos en 2010)?</h3>
 					
-					<img href="#opcion1" class="option" src="recursos/imagenes/san Shrek.png"width="50%"></img>
+					<a href="#opcion1" class="opcion1"><img href="#opcion1" class="option" src="recursos/imagenes/san Shrek.png" width="50%"></img></a>
 					<!--img src="/src/recursos/imagenes/bobbaloo.png" alt="bobbaloo" href="#opcion1" class="option"-->
 			
 					<div id="opcion1" class="message">
@@ -136,74 +137,4 @@
 	</footer>
 </body>
 
-<script>
-
-	var codigos = {
-		"001": "Tu disfraz es de caperucita roja",
-		"002": "Tu disfraz es Blancanieves",
-		"003": "Tu disfraz es de príncipe",
-		"007": "Siuuuuuuuuuuuuuuu te disfrazas del bicho",
-		"033": "Tu disfraz es de Jesucristo o del nano",
-		"069": "Te toca disfrazarte de Nacho vidal",
-		"666": "Arderás en el caldero de satán si no te disfrazas del diablo",
-		"bicholover": "Te tienes que disfrazar de entrenador Pokemon",
-		"lolinator": "Lolinator extermina bichos y convalida duchas. Disfrazate de cuasimodo",
-		"coco": "Disfrázate de pantera rosa. El bollo más marica"
-	};
-	var contadorErrores = 0;
-	var contadorTotalErrores = 0;
-	var ultimoCodigoCorrecto = true;
-  
-	function validarCodigo() {
-		limpiarResultado();
-		var codigoUsuario = document.getElementById("codigo").value;
-		if (codigoUsuario === "") {
-			return;
-		}
-		if (codigoUsuario in codigos) {
-			if (!ultimoCodigoCorrecto) {
-				contadorErrores = 0;
-				document.getElementById("codigoErroneo").innerText = "";
-			}
-			ultimoCodigoCorrecto = true;
-			var resultadoDiv = document.getElementById("resultado");
-			resultadoDiv.style.display = "flex";
-			var texto = codigos[codigoUsuario];
-			resultadoDiv.innerHTML += "<span font-weight: bold;'>" + texto + "</span>";
-			document.getElementById("botonMenuPrincipal").style.display = "inline-block";
-			document.getElementById("formulario").style.display = "none";
-		} else {
-			ultimoCodigoCorrecto = false;
-			contadorErrores++;
-			contadorTotalErrores++;
-			mostrarContadorErrores(contadorErrores);
-			document.getElementById("codigoErrores").style.display = "none";
-			var codigoErroneoDiv = document.getElementById("codigoErroneo");
-			var mensaje = "¡Código Erróneo! ";
-			if (contadorErrores > 1) {
-				mensaje += contadorErrores + " Errores";
-			}
-			codigoErroneoDiv.innerText = mensaje;
-		}
-	}
-	function limpiarResultado() {
-		var resultadoDiv = document.getElementById("resultado");
-		resultadoDiv.innerHTML = "";
-	}
-	function mostrarContadorErrores(contador) {
-		var contadorDiv = document.getElementById("codigoErroneo");
-		contadorDiv.innerText = "¡Código Erróneo! " + contador + " Errores";
-	}
-	function irAlMenu() {
-		document.getElementById("formulario").style.display = "block";
-		document.getElementById("resultado").style.display = "none";
-		document.getElementById("botonMenuPrincipal").style.display = "none";
-	}
-	document.getElementById("codigo").addEventListener("keypress", function (event) {
-		if (event.keyCode === 13) {
-			event.preventDefault();
-			validarCodigo();
-		}
-	});
-</script>
 </html>
