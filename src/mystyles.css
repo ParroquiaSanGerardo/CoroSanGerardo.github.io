@@ -32,10 +32,12 @@ body {
 h1{
     font-family: 'mi-fuente';
     font-size: 3em;
+    
 }
 h2{
     font-family: 'mi-fuente';
     font-size: 2.5em;
+    color: var(--vero);
 }
 header{
     width: 100%;
@@ -54,7 +56,9 @@ header{
 }
 .tam{
     width: 50%;
-    padding: 2%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
 }
 main{
     width: 100%;
