@@ -50,6 +50,7 @@ header{
     color: var(--vero);
     margin-bottom: 5%;
     padding: 1%;
+    justify-content: center;
 }
 .rec{
     width: 50%;
@@ -144,10 +145,27 @@ footer{
     color: var(--vero);
     padding-top: 0.5%;
     padding-bottom: 0.5%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
-
+.I,.D{
+    width: 25%;
+}
+.T{
+    width: 40%;
+    font-family: 'mi-fuente';
+}
+.T>h3,.T>h6{
+    display: initial;
+}
+.T>h1,.T>h4{
+    display: none;
+}
 
 /*------------------------------- Disfraz --------------------------------------*/
 
@@ -480,6 +498,7 @@ h3 {
         grid-template-columns: subgrid;
         grid-template-rows: subgrid;
         gap: 1% 1%;
+        justify-items: center;
     }
     .a2> .img {
         width: 100%;
@@ -537,8 +556,20 @@ h3 {
         margin-top: 12.5%;
         background-color: var(--verc);
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
         color: var(--vero);
+    }
+    .I>img,.D>img{
+        width: 50%;
+    }
+    .T>h3,.T>h6{
+        display: none;
+    }
+    .T>h1,.T>h4{
+        display: initial;
+    }
+    .T{
+        align-items: flex-start;
     }
 }
