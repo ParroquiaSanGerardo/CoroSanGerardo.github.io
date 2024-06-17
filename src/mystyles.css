@@ -53,11 +53,11 @@ header{
     justify-content: center;
 }
 .rec{
-    width: 50%;
+    width: 100%;
     margin: 2%;
 }
 .tam{
-    width: 50%;
+    width: 0%;
     padding: 0%;
     display: flex;
     justify-content: center;
