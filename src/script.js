@@ -1,4 +1,5 @@
 var codigos = {
+    "001" : "Te tienes que disfrazar de un personaje de la película: Bella Durmiente (Aurora, Hadas madrinas Principe Felipe y Maléfica.)",
     "Sara Bullido" : "Te tienes que disfrazar de un personaje de la película: Bella Durmiente (Aurora, Hadas madrinas Principe Felipe y Maléfica.)",
     "Enzo González" : "Te tienes que disfrazar de un personaje de la película: Bella Durmiente (Aurora, Hadas madrinas Principe Felipe y Maléfica.)",
     "Félix Muñoz" : "Te tienes que disfrazar de un personaje de la película: Bella Durmiente (Aurora, Hadas madrinas Principe Felipe y Maléfica.)",
@@ -9,6 +10,7 @@ var codigos = {
     "David González" : "Te tienes que disfrazar de un personaje de la película: Bella Durmiente (Aurora, Hadas madrinas Principe Felipe y Maléfica.)",
     "Ariel Díaz" : "Te tienes que disfrazar de un personaje de la película: Bella Durmiente (Aurora, Hadas madrinas Principe Felipe y Maléfica.)",
 
+    "002" : "Te tienes que disfrazar de un personaje de la película: Blancanieves (Princesa Blancanieves, Príncipe Florian, los 7 enanitos, La Reina Grimhilde y del Espejo Mágico.)",
     "Lia Jiménez" : "Te tienes que disfrazar de un personaje de la película: Blancanieves (Princesa Blancanieves, Príncipe Florian, los 7 enanitos, La Reina Grimhilde y del Espejo Mágico.)",
     "Daniela Cuesta" : "Te tienes que disfrazar de un personaje de la película: Blancanieves (Princesa Blancanieves, Príncipe Florian, los 7 enanitos, La Reina Grimhilde y del Espejo Mágico.)",
     "Daniela Bullido" : "Te tienes que disfrazar de un personaje de la película: Blancanieves (Princesa Blancanieves, Príncipe Florian, los 7 enanitos, La Reina Grimhilde y del Espejo Mágico.)",
@@ -19,6 +21,7 @@ var codigos = {
     "Aitor Salán" : "Te tienes que disfrazar de un personaje de la película: Blancanieves (Princesa Blancanieves, Príncipe Florian, los 7 enanitos, La Reina Grimhilde y del Espejo Mágico.)",
     "Ricardo Torres" : "Te tienes que disfrazar de un personaje de la película: Blancanieves (Princesa Blancanieves, Príncipe Florian, los 7 enanitos, La Reina Grimhilde y del Espejo Mágico.)",
 
+    "003" : "Te tienes que disfrazar de un personaje de la película: Rapunzel (Rapunzel, Flynn Rider, Malvada Madre Gothel.)",
     "Alma Villa" : "Te tienes que disfrazar de un personaje de la película: Rapunzel (Rapunzel, Flynn Rider, Malvada Madre Gothel.)",
     "Iago Jiménez" : "Te tienes que disfrazar de un personaje de la película: Rapunzel (Rapunzel, Flynn Rider, Malvada Madre Gothel.)",
     "Rubén Sánchez" : "Te tienes que disfrazar de un personaje de la película: Rapunzel (Rapunzel, Flynn Rider, Malvada Madre Gothel.)",
@@ -29,6 +32,7 @@ var codigos = {
     "Candela Bakkali" : "Te tienes que disfrazar de un personaje de la película: Rapunzel (Rapunzel, Flynn Rider, Malvada Madre Gothel.)",
     "María Claver" : "Te tienes que disfrazar de un personaje de la película: Rapunzel (Rapunzel, Flynn Rider, Malvada Madre Gothel.)",
 
+    "004" : "Te tienes que disfrazar de un personaje de la película: Cenicienta (Cenicienta, Príncipe Henry, Anastasia, Drizella, La Madrastra, Hada Madrina.)",
     "Emma Bullido" : "Te tienes que disfrazar de un personaje de la película: Cenicienta (Cenicienta, Príncipe Henry, Anastasia, Drizella, La Madrastra, Hada Madrina.)",
     "Jimena Martín" : "Te tienes que disfrazar de un personaje de la película: Cenicienta (Cenicienta, Príncipe Henry, Anastasia, Drizella, La Madrastra, Hada Madrina.)",
     "Marcos Hidalgo" : "Te tienes que disfrazar de un personaje de la película: Cenicienta (Cenicienta, Príncipe Henry, Anastasia, Drizella, La Madrastra, Hada Madrina.)",
@@ -39,6 +43,7 @@ var codigos = {
     "Samuel García" : "Te tienes que disfrazar de un personaje de la película: Cenicienta (Cenicienta, Príncipe Henry, Anastasia, Drizella, La Madrastra, Hada Madrina.)",
     "Ariadna Bermeja" : "Te tienes que disfrazar de un personaje de la película: Cenicienta (Cenicienta, Príncipe Henry, Anastasia, Drizella, La Madrastra, Hada Madrina.)",
 
+    "005" : "Te tienes que disfrazar de un personaje de la película: Aladdin (Jasmin, Aladdin,Jafar, El genio, Abú, Iago.)",
     "Miguel García" : "Te tienes que disfrazar de un personaje de la película: Aladdin (Jasmin, Aladdin,Jafar, El genio, Abú, Iago.)",
     "Javier Villa" : "Te tienes que disfrazar de un personaje de la película: Aladdin (Jasmin, Aladdin,Jafar, El genio, Abú, Iago.)",
     "Marina Gómez" : "Te tienes que disfrazar de un personaje de la película: Aladdin (Jasmin, Aladdin,Jafar, El genio, Abú, Iago.)",
@@ -48,6 +53,7 @@ var codigos = {
     "Noah González" : "Te tienes que disfrazar de un personaje de la película: Aladdin (Jasmin, Aladdin,Jafar, El genio, Abú, Iago.)",
     "Sara Diep": "Te tienes que disfrazar de un personaje de la película: Aladdin (Jasmin, Aladdin,Jafar, El genio, Abú, Iago.)",
 
+    "006" : "Te tienes que disfrazar de un personaje de la película: Sirenita (Ariel, Úrsula, Sebastián, El príncipe Erik, Flounder.)",
     "Santiago García" : "Te tienes que disfrazar de un personaje de la película: Sirenita (Ariel, Úrsula, Sebastián, El príncipe Erik, Flounder.)",
     "Luiza Stefania Isac" : "Te tienes que disfrazar de un personaje de la película: Sirenita (Ariel, Úrsula, Sebastián, El príncipe Erik, Flounder.)",
     "Hugo de Juan" : "Te tienes que disfrazar de un personaje de la película: Sirenita (Ariel, Úrsula, Sebastián, El príncipe Erik, Flounder.)",
